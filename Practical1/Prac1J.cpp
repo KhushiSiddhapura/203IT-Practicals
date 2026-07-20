@@ -19,5 +19,7 @@ int main()
 
     ans = max(x, y, z);
 
+    cout << "Maximum number out of three numbers is: " << ans << endl;
+
     return 0;
 }
