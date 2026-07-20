@@ -12,4 +12,6 @@ int main()
     cout << "Before count increse, count: " << count << endl;
     increase(count);
     cout << "After count increse, count: " << count << endl;
+
+    return 0;
 }
