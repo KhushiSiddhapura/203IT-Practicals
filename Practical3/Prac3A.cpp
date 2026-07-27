@@ -46,6 +46,14 @@ public:
             b = temp;
         }
     }
+
+    void search(int id)
+    {
+        if (Student_Id == id)
+        {
+            displayData();
+        }
+    }
 };
 
 int main()
@@ -85,5 +93,13 @@ int main()
         s[i].displayData();
     }
 
+    int id;
+    cout << "Enter ID of student to display their data:" << endl;
+    cin >> id;
+
+    for (int i = 0; i < n; i++)
+    {
+        s[i].search(id);
+    }
     return 0;
 }

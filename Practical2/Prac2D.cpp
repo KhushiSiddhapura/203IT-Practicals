@@ -3,11 +3,11 @@ using namespace std;
 
 int max(int a, int b, int c)
 {
-    if (a > b && a > c)
+    if (a >= b && a >= c)
     {
         return a;
     }
-    else if (b > c && b > a)
+    else if (b >= c && b >= a)
     {
         return b;
     }
@@ -19,11 +19,11 @@ int max(int a, int b, int c)
 
 string max(string a, string b, string c)
 {
-    if (a > b && a > c)
+    if (a >= b && a >= c)
     {
         return a;
     }
-    else if (b > c && b > a)
+    else if (b >= c && b >= a)
     {
         return b;
     }
