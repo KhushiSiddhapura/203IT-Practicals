@@ -1,36 +1,43 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Num{
+class Num
+{
     int a;
-    public:
-    Num(){ }
-    Num(int x){
-        a=x;
+
+public:
+    Num() {}
+    Num(int x)
+    {
+        a = x;
     }
-    void operator ++(){
+    void operator++()
+    {
         a++;
     }
-    void operator --(){
+    void operator--()
+    {
         a--;
     }
-    void display(){
-        cout<<"a="<<a<<endl;
+    void display()
+    {
+        cout << "a=" << a << endl;
     }
 };
 
-int main(){
+int main()
+{
     int x;
-    cout<<"Enter a number: "<<endl;
-    cin>>x;
+    cout << "Enter a number: " << endl;
+    cin >> x;
     Num n(x);
-    cout<<"Before calling overloaded increment: "<<endl;
+    cout << "Before calling overloaded increment: " << endl;
     n.display();
     ++n;
-    cout<<"After calling overloaded increment and before calling overloaded decrement"<<endl;
+    cout << "After calling overloaded increment and before calling overloaded decrement" << endl;
     n.display();
     --n;
-    cout<<"After calling overloaded decrement: "<<endl;
+    cout << "After calling overloaded decrement: " << endl;
     n.display();
     return 0;
 }
