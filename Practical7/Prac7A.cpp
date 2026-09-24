@@ -3,54 +3,49 @@ using namespace std;
 
 class Num1
 {
+protected:
     int a;
 
 public:
-    Num1()
+    void getNum1()
     {
-        cout << "Enter Number 1:" << endl;
+        cout << "Enter First Number:" << endl;
         cin >> a;
     }
-    void display1()
+    void displayNum1()
     {
-        cout << "Number 1:" << a << endl;
-    }
-    int getNum1()
-    {
-        return a;
+        cout << "Number 1: " << a << endl;
     }
 };
 
 class Num2 : public Num1
 {
+protected:
     int b;
 
 public:
-    Num2()
+    void getNum2()
     {
-        cout << "Enter Number 2:" << endl;
+        getNum1();
+        cout << "Enter Second Number: " << endl;
         cin >> b;
     }
-    void display2()
+    void displayNum2()
     {
-        cout << "Number 2:" << b << endl;
+        displayNum1();
+        cout << "Number 2: " << b << endl;
     }
-    int getNum2()
+    int multiply()
     {
-        return b;
-    }
-    int multiply(){
-        int x = getNum1();
-        int y = getNum2();
-        return x*y;
+        return a * b;
     }
 };
 
 int main()
 {
     Num2 n;
-    n.display1();
-    n.display2();
-    cout<<"Multiplication of Number 1 and 2: "<<n.multiply()<<endl;
+    n.getNum2();
+    n.displayNum2();
+    cout << "Multiplication of first and second is " << n.multiply() << endl;
     return 0;
 }

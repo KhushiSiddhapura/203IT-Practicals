@@ -97,7 +97,7 @@ int main()
             cout << "Enter value of x and y" << endl;
             cin >> x >> y;
             Rectangle r1(x, y);
-            Polar p1(r1);
+            Polar p1(r1); // Polar p1=r1;
             r1.display();
             p1.display();
         }
