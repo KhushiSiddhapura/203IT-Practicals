@@ -12,3 +12,9 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Enter temperature in Fahrenheit: 
+// 102
+// Celcius: 38.8889
