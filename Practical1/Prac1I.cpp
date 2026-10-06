@@ -15,3 +15,8 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// Before count increse, count: 0
+// After count increse, count: 1
