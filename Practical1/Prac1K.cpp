@@ -22,3 +22,13 @@ int main()
     cout << "Simple Interest: " << interest << endl;
     return 0;
 }
+
+// Output: 
+
+// Enter Principle Amount:
+// 15000
+// Enter Interest Rate:
+// 9.08
+// Enter time period (in years):
+// 5
+// Simple Interest: 6810
