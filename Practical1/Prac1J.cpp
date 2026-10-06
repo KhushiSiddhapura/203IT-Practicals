@@ -23,3 +23,9 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// Enter Three integer values :
+// 2 6 4
+// Maximum number out of three numbers is: 6
