@@ -7,3 +7,8 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Name: Khushi Siddhapura
+// Address: Anand, Gujarat, India
