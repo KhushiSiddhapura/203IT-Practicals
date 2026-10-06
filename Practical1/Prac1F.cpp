@@ -32,3 +32,9 @@ int main()
     }
     return 0;
 }
+
+// Output:
+
+// Enter a number
+// 153
+// 153 is armstrong number!
