@@ -12,3 +12,14 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Enter Marks of 6 subjects: 
+// 98
+// 99
+// 94
+// 92
+// 99
+// 94
+// Total Marks: 576
