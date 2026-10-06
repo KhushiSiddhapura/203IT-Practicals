@@ -15,3 +15,9 @@ int main(){
     cout<<"Sum of Each digit: "<<sum<<endl;
     return 0;
 }
+
+// Output:
+
+// Enter a number
+// 12345
+// Sum of Each digit: 15
