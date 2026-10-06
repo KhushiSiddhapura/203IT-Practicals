@@ -27,3 +27,16 @@ int main(){
     cout<<"Result: "<<result<<endl;
     return 0;
 }
+
+// Output:
+
+// Enter two numbers
+// 3
+// 4
+// 1.Addition
+// 2.Subtraction
+// 3.Multiplication
+// 4.Division
+// Enter number for operation
+// 3
+// Result: 12
