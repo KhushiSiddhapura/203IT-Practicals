@@ -21,3 +21,18 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Enter range of prime numbers: 
+// 30
+// 2
+// 3
+// 5
+// 7
+// 11
+// 13
+// 17
+// 19
+// 23
+// 29
