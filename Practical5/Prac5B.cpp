@@ -52,3 +52,13 @@ int main()
     t[2].display();
     return 0;
 }
+
+// Output:
+
+// Enter hours, minute and second: 
+// 18 18 18
+// Time: 18:18:18
+// Enter hours, minute and second: 
+// 60 60 60
+// Time: 60:60:60
+// Time: 79:19:18
