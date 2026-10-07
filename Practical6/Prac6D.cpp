@@ -45,3 +45,13 @@ int main()
     c.display();
     return 0;
 }
+
+// Output:
+
+// Enter real and imaginary part: 
+// 4 5
+// 4 + i5
+// After calling pre increment:
+// 5 + i5
+// After calling post increment: 
+// 5 + i6
