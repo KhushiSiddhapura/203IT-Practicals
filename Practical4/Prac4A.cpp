@@ -46,3 +46,14 @@ int main(){
     b.display();
     return 0;
 }
+
+// Output:
+
+// Enter Value of a: 
+// 5
+// Enter Value of b: 
+// 9
+// a = 5
+// b = 9
+// a = 9
+// b = 5
