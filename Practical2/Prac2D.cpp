@@ -46,3 +46,12 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// Enter three integer values:
+// 3 4 6
+// Maximum Number: 6
+// Enter three strings:
+// Khushi Nidhish A
+// Maximum String: Nidhish
