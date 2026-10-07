@@ -16,3 +16,9 @@ float areaOfCircle(float r, float PI = 3.1415){
 
     return 0;
 }
+
+// Output:
+
+// Enter radius of circle:
+// 5
+// Area of Circle is: 78.5375
