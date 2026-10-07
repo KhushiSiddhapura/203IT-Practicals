@@ -91,3 +91,24 @@ int main()
     m4.display();
     return 0;
 }
+
+// Output:
+
+// Enter order of matrix: 
+// 2
+// Enter 4 elements
+// 1 2 3 4
+// Enter 4 elements
+// 1 2 3 4
+// Matrix 1: 
+// 1 2 
+// 3 4 
+// Matrix 2: 
+// 1 2 
+// 3 4 
+// Addition of matrix 1 and 2: 
+// 2 4 
+// 6 8 
+// Multiplication of matrix 1 and 2: 
+// 7 10 
+// 15 22 
