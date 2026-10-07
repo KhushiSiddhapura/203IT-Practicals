@@ -35,3 +35,9 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Enter a number: 
+// 7
+// 7 is prime number
