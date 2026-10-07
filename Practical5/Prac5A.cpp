@@ -51,3 +51,13 @@ int main()
     cout << "Addition of a and b is " << add(n1, n2) << endl;
     return 0;
 }
+
+// Output:
+
+// Enter integer value of A: 
+// 5
+// Enter integer value of b: 
+// 9
+// a=5
+// b=9
+// Addition of a and b is 14
