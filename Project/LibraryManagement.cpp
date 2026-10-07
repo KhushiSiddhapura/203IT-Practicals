@@ -54,6 +54,7 @@ public:
         cout << "Number of Pages: " << pages << endl;
         cout << "Available Copies: " << available << endl;
         cout << "Issued Copies: " << issued << endl;
+        cout << "-----------------------------------------" << endl;
     }
     friend void issueBook(User u, Book b);
     friend void returnBook(User u, Book b);
