@@ -43,3 +43,9 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// String 1: Hello, 
+// String 2: World!
+// String 3: Hello, World!
