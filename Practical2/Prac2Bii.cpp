@@ -1,4 +1,3 @@
-//Call by refercnce
 #include<iostream>
 using namespace std;
 
@@ -23,3 +22,17 @@ int main(){
 
     return 0;
 }
+
+// Output:
+
+// Enter value of X and Y: 
+// 4 6
+// Before swaping
+// X=4
+// Y=6
+// Inside the function
+// X=6
+// Y=4
+// After swap function call
+// X=6
+// Y=4
