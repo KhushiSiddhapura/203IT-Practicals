@@ -32,3 +32,11 @@ int main()
     cout<<"Average of a and b is: "<<mean(n);
     return 0;
 }
+
+// Output:
+
+// Enter two numbers: 
+// 4 9
+// a=4
+// b=9
+// Average of a and b is: 6.5
