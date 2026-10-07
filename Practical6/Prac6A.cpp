@@ -41,3 +41,14 @@ int main()
     n.display();
     return 0;
 }
+
+// Output:
+
+// Enter a number: 
+// 7
+// Before calling overloaded increment: 
+// a=7
+// After calling overloaded increment and before calling overloaded decrement
+// a=8
+// After calling overloaded decrement: 
+// a=7
