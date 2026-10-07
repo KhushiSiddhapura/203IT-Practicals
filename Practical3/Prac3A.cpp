@@ -103,3 +103,88 @@ int main()
     }
     return 0;
 }
+
+// Output:
+
+// Enter how many student's data you want to enter:
+// 3
+// Enter Data of Student 1
+// Enter Student ID:
+// 1
+// Enter Student Name:
+// Khushi
+// Enter Current Semester:
+// 2
+// Enter SPI and CPI:
+// 9.37
+// 9.33
+// Enter Data of Student 2
+// Enter Student ID:
+// 2
+// Enter Student Name:
+// Nidhish
+// Enter Current Semester:
+// 2
+// Enter SPI and CPI:
+// 8
+// 8.5
+// Enter Data of Student 3
+// Enter Student ID:
+// 3
+// Enter Student Name:
+// Hiya
+// Enter Current Semester:
+// 2
+// Enter SPI and CPI:
+// 7
+// 8
+// All data: 
+// Student Id: 1
+// Name: Khushi
+// Current Semester: 2
+// SPI: 9.37
+// CPI: 9.33
+// Student Id: 2
+// Name: Nidhish
+// Current Semester: 2
+// SPI: 8
+// CPI: 8.5
+// Student Id: 3
+// Name: Hiya
+// Current Semester: 2
+// SPI: 7
+// CPI: 8
+// Student data whose CPI is between 7.6 & 8.9
+// Student Id: 2
+// Name: Nidhish
+// Current Semester: 2
+// SPI: 8
+// CPI: 8.5
+// Student Id: 3
+// Name: Hiya
+// Current Semester: 2
+// SPI: 7
+// CPI: 8
+// SPI in Ascending Order
+// Student Id: 3
+// Name: Hiya
+// Current Semester: 2
+// SPI: 7
+// CPI: 8
+// Student Id: 2
+// Name: Nidhish
+// Current Semester: 2
+// SPI: 8
+// CPI: 8.5
+// Student Id: 1
+// Name: Khushi
+// Current Semester: 2
+// SPI: 9.37
+// CPI: 9.33
+// Enter ID of student to display their data:
+// 2
+// Student Id: 2
+// Name: Nidhish
+// Current Semester: 2
+// SPI: 8
+// CPI: 8.5
