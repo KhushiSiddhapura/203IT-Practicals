@@ -120,3 +120,38 @@ int main()
     } while (choice == 'y' || choice == 'Y');
     return 0;
 }
+
+// Output:
+
+// Enter..
+// 1 for rectangle to polar
+// 2 for polar to rectangle:
+// 1
+// Enter value of x and y
+// 3 4
+// x=3
+// y=4
+// radius=5
+// theta=0.643501
+// Do you want to continue?(Enter y for yes)
+// y
+// Enter..
+// 1 for rectangle to polar
+// 2 for polar to rectangle:
+// 2
+// enter radius and theta: 
+// 5
+// 0.643501
+// radius=5
+// theta=0.643501
+// x=4
+// y=3
+// Do you want to continue?(Enter y for yes)
+// Y
+// Enter..
+// 1 for rectangle to polar
+// 2 for polar to rectangle:
+// 3
+// Invalid Choice:
+// Do you want to continue?(Enter y for yes)
+// n
