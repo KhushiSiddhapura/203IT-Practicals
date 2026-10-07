@@ -47,3 +47,14 @@ int main()
     c3.display();
     return 0;
 }
+
+// Output:
+
+// Enter real and imaginary part: 
+// 4 5
+// Enter real and imaginary part: 
+// 3 4
+// 4 + i5
+// 3 + i4
+// Addition of 1st and 2nd: 
+// 7 + i9
