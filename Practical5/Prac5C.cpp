@@ -25,3 +25,7 @@ int main()
     cout << Count::showCount() << " time object is created!" << endl;
     return 0;
 }
+
+// Output:
+
+// 132 time object is created!
