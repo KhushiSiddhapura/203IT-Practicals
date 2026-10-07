@@ -49,3 +49,13 @@ int main()
     cout << "Multiplication of first and second is " << n.multiply() << endl;
     return 0;
 }
+
+// Output:
+
+// Enter First Number:
+// 5
+// Enter Second Number: 
+// 9
+// Number 1: 5
+// Number 2: 9
+// Multiplication of first and second is 45
