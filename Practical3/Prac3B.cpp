@@ -105,3 +105,36 @@ int main()
         a[i].data(acc);
     }
 }
+
+// Output:
+
+// Enter number of accounts: 
+// 3
+// Enter Account Number:
+// 10101
+// Enter Account Holder Name:
+// Khushi 
+// Enter Account Balance:
+// 20000
+// Enter Account Number:
+// 10102
+// Enter Account Holder Name:
+// Nidhish
+// Enter Account Balance:
+// 30000
+// Enter Account Number:
+// 10103
+// Enter Account Holder Name:
+// Dhruvi
+// Enter Account Balance:
+// 10000
+// Enter account number in which you want to deposit money and amount of money you want to deposit
+// 10101 30000
+// Total Balance after deposit: 50000
+// Enter account number from which you want to withdraw money and amount of money you want to withdraw
+// 10102 5000
+// Balance After withdrawing amount: 25000
+// Enter account number to see data:
+// 10102
+// Accout Holder Name: Nidhish
+// Balance: 25000
