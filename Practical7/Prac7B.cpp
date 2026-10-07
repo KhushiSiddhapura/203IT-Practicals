@@ -68,3 +68,16 @@ int main()
     cout << "Multiplication of 3 numbers: " << n.multiply() << endl;
     return 0;
 }
+
+// Output:
+
+// Enter first number:
+// 5
+// Enter second number:
+// 2
+// Enter third number:
+// 9
+// Number 1: 5
+// Number 2: 2
+// Number 3: 9
+// Multiplication of 3 numbers: 90
