@@ -8,15 +8,21 @@ protected:
     float price;
 
 public:
-    Vehicle(int y = 0, float pr = 0.00)
+    Vehicle(int y = 0, float p = 0.00)
     {
         year = y;
-        price = pr;
+        price = p;
     }
-    void displayV()
+
+    virtual void display()
     {
-        cout << "Manufacturing year: " << year << endl;
-        cout << "Price: " << price << endl;
+        cout << "Manufacturing Year: " << year << endl;
+        cout << "Vehicle Price: " << price << endl;
+    }
+
+    virtual float calculate()
+    {
+        return 0;
     }
 };
 
@@ -27,18 +33,21 @@ protected:
     float price_per_seat;
 
 public:
-    Bus(int y = 0, float pr = 0.00, int seats = 0, float s_pr = 0.00) : Vehicle(y, pr)
+    Bus(int y = 0, float p = 0.0, int seats = 0, float sp = 0.0)
+        : Vehicle(y, p)
     {
         seating_cap = seats;
-        price_per_seat = s_pr;
+        price_per_seat = sp;
     }
-    void displayB()
+
+    void display()
     {
-        displayV();
-        cout << "Seating capacity: " << seating_cap << endl;
+        Vehicle::display();
+        cout << "Seating Capacity: " << seating_cap << endl;
         cout << "Price per seat: " << price_per_seat << endl;
     }
-    float calculateS()
+
+    float calculate()
     {
         return seating_cap * price_per_seat;
     }
@@ -51,18 +60,21 @@ protected:
     float price_per_item;
 
 public:
-    Truck(int y = 0, float pr = 0.00, int load = 0, float l_pr = 0.00) : Vehicle(y, pr)
+    Truck(int y = 0, float p = 0.0, int load = 0, float ip = 0.0)
+        : Vehicle(y, p)
     {
         loading_cap = load;
-        price_per_item = l_pr;
+        price_per_item = ip;
     }
-    void displayT()
+
+    void display()
     {
-        displayV();
+        Vehicle::display();
         cout << "Loading Capacity: " << loading_cap << endl;
         cout << "Price per item: " << price_per_item << endl;
     }
-    float calculateT()
+
+    float calculate()
     {
         return loading_cap * price_per_item;
     }
@@ -70,39 +82,111 @@ public:
 
 int main()
 {
-    char choice;
+    char ch;
+
     do
     {
-        int ch;
-        cout << "Enter.." << endl;
-        cout << "1. To enter data of Bus" << endl;
-        cout << "2. To enter data of Truck" << endl;
-        cin >> ch;
-        if (ch == 1)
+        int choice;
+
+        cout << "\n1. Bus";
+        cout << "\n2. Truck";
+        cout << "\nEnter your choice: ";
+        cin >> choice;
+
+        if (choice == 1)
         {
-            int y, cp;
-            float pr, s_pr;
-            cout << "Enter Manufacturing year, price, seat capacity and price per seat:" << endl;
-            cin >> y >> pr >> cp >> s_pr;
-            Bus B(y, pr, cp, s_pr);
-            cout << "Total Price of all seats: " << B.calculateS() << endl;
+            int year, seats;
+            float price, pricePerSeat;
+
+            cout << "Enter manufacturing year, price, seating capacity and price per seat: "
+                 << endl;
+
+            cin >> year >> price >> seats >> pricePerSeat;
+
+            Bus b(year, price, seats, pricePerSeat);
+
+            Vehicle *v = &b;
+
+            v->display();
+
+            cout << "Total Price of All Seats: "
+                 << v->calculate() << endl;
         }
-        else if (ch == 2)
+        else if (choice == 2)
         {
-            int y, cp;
-            float pr, i_pr;
-            cout << "Enter manufacturing year, price, loading capacity and price per item: " << endl;
-            cin >> y >> pr >> cp >> i_pr;
-            Truck T(y, pr, cp, i_pr);
-            cout << "Total Price of loading all items: " << T.calculateT() << endl;
+            int year, loading;
+            float price, pricePerItem;
+
+            cout << "Enter manufacturing year, price, loading capacity and price per item: "
+                 << endl;
+
+            cin >> year >> price >> loading >> pricePerItem;
+
+            Truck t(year, price, loading, pricePerItem);
+
+            Vehicle *v = &t;
+
+            v->display();
+
+            cout << "Total Price of All Loaded Items: "
+                 << v->calculate() << endl;
         }
         else
         {
-            cout << "Invalid Choice!" << endl;
+            cout << "Invalid choice!" << endl;
         }
-        cout << "Do you want to continue?(y for yes)" << endl;
-        cin >> choice;
-    } while (choice == 'y' || choice == 'Y');
+
+        cout << "\nDo you want to continue? (y for yes)"
+             << endl;
+
+        cin >> ch;
+
+    } while (ch == 'y' || ch == 'Y');
 
     return 0;
 }
+
+// Output:
+
+
+// 1. Bus
+// 2. Truck
+// Enter your choice: 1
+// Enter manufacturing year, price, seating capacity and price per seat: 
+// 2020
+// 500000
+// 40
+// 100
+// Manufacturing Year: 2020
+// Vehicle Price: 500000
+// Seating Capacity: 40
+// Price per seat: 100
+// Total Price of All Seats: 4000
+
+// Do you want to continue? (y for yes)
+// y
+
+// 1. Bus
+// 2. Truck
+// Enter your choice: 2
+// Enter manufacturing year, price, loading capacity and price per item: 
+// 2022
+// 500000
+// 80
+// 30
+// Manufacturing Year: 2022
+// Vehicle Price: 500000
+// Loading Capacity: 80
+// Price per item: 30
+// Total Price of All Loaded Items: 2400
+
+// Do you want to continue? (y for yes)
+// Y 
+
+// 1. Bus
+// 2. Truck
+// Enter your choice: 3
+// Invalid choice!
+
+// Do you want to continue? (y for yes)
+// n
