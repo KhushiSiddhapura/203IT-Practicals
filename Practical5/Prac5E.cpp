@@ -25,3 +25,9 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// Enter a number: 
+// 6
+// 6 factorial = 720
