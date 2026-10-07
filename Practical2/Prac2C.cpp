@@ -20,3 +20,9 @@ int main()
 
     return 0;
 }
+
+// Output:
+
+// Area of Right-angle Triangle with base = 6 units and height = 8 units :24
+// Area of Equilateral Triangle with sidelength = 4 units :6.9282
+// Area of Isosceles Triangle with height = 10.25 units and base = 6.87 units: 35.2087
